@@ -1,137 +1,89 @@
 # AlgoCypher - Cryptography Learning & Gaming Platform
 
-![AlgoCypher](https://img.shields.io/badge/Language-Python-blue) ![GUI](https://img.shields.io/badge/GUI-CustomTkinter-green) ![Database](https://img.shields.io/badge/Database-SQL%20Server-red)
+![Python](https://img.shields.io/badge/Python-3.x-blue?style=flat-square) ![GUI](https://img.shields.io/badge/CustomTkinter-GUI-green?style=flat-square) ![Database](https://img.shields.io/badge/SQL%20Server-Database-red?style=flat-square)
 
-## 📚 Overview
+## Overview
 
-**AlgoCypher** is an interactive cryptography learning platform that combines educational cipher algorithms with engaging game-based challenges. It's designed to teach users about various encryption and decryption techniques through practical implementation and real-time challenges with scoring systems.
+**AlgoCypher** is an interactive cryptography platform that implements 11+ classical and advanced cipher algorithms with engaging game-based challenges. Users can encrypt/decrypt messages, solve timed cipher puzzles, and compete on a leaderboard.
 
-## 🎮 Video Explanation
+**[▶️ Project Demo](https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm)** | **[Video Explanation](https://www.youtube.com/watch?v=S9fDUpTTqjk)**
 
-For a detailed walkthrough and visual explanation of the project, click on the video thumbnail below:
+## Cipher Implementations
 
-[![AlgoCypher - Project Explanation and Demo](https://img.youtube.com/vi/S9fDUpTTqjk/maxresdefault.jpg)](https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm)
+| Cipher Type | Implementation | Category |
+|-------------|----------------|----------|
+| **Caesar Cipher** | Character shift by fixed key | Substitution |
+| **ROT13** | Caesar variant with fixed shift of 13 | Substitution |
+| **Vigenere Cipher** | Polyalphabetic substitution with keyword | Polyalphabetic |
+| **Playfair Cipher** | Digraph substitution using 5×5 matrix | Substitution |
+| **Hill Cipher** | Matrix-based mathematical encryption | Mathematical |
+| **Rail Fence Cipher** | Zigzag transposition across multiple rails | Transposition |
+| **Substitution Cipher** | General character mapping with custom key | Substitution |
+| **XOR Cipher** | Bitwise XOR operation with key | Mathematical |
+| **Egyptian Hieroglyph** | Fibonacci-shift + hieroglyph symbols | Specialized |
+| **Delta Cipher (ΔCipher)** | Calculus-based (derivatives & integrals) | Mathematical |
+| **Caesar-Fibonacci** | Position-dependent Fibonacci sequence shift | Polyalphabetic |
+| **Reverse Cipher** | Character reversal | Transposition |
 
-**[▶️ Watch on YouTube](https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm)** | **[🔗 Direct Link](https://www.youtube.com/watch?v=S9fDUpTTqjk)**
+## Modules Overview
 
-## 📋 Project Structure
+**Cyphers.py** - Core cryptographic algorithms library with encryption/decryption functions for all 11+ ciphers and mathematical operations.
 
-### Core Files
+**Dashboard_game.py** - Main gaming interface with 3-level challenges, real-time timer (120 seconds per challenge), SQL Server leaderboard integration, and automatic score tracking.
 
-#### 1. **Cyphers.py** - Cipher Algorithms Library
-The main cryptographic algorithms implementation featuring:
+**Introduction_game.py** - Educational learning module featuring Fibonacci encryption, hieroglyph puzzles, Round 5 cipher challenges, and calculus-based cipher games with neon UI.
 
-**Classical Ciphers:**
-- **Caesar Cipher** - Shift-based substitution cipher
-- **ROT13** - Special case of Caesar cipher with fixed shift of 13
-- **Reverse Cipher** - Reverses the entire text
-- **Vigenere Cipher** - Polyalphabetic substitution using a keyword
-- **Playfair Cipher** - Digraph substitution cipher
-- **Rail Fence Cipher** - Transposition cipher using multiple rails
+**ImageEncryption.py** - XOR-based image encryption utility supporting PNG, JPG, JPEG, and BMP formats with file management and decryption capabilities.
 
-**Advanced Ciphers:**
-- **Substitution Cipher** - General substitution with custom key mapping
-- **Hill Cipher** - Mathematical cipher using linear algebra (matrix operations)
-- **XOR Cipher** - Bitwise XOR operation with a key
-- **Transposition Cipher** - Rearranges plaintext positions
+## Key Features
 
-**Specialized Ciphers:**
-- **Egyptian Hieroglyph Cipher** - Combines Caesar-Fibonacci shift with Egyptian hieroglyph symbols
-- **Delta Cipher (ΔCipher)** - Mathematical encryption using calculus (derivatives and integrals) with symbolic computation
-- **Caesar-Fibonacci** - Position-based cipher using Fibonacci sequence
+- **11+ Cipher Algorithms** - Classical, mathematical, and specialized encryption methods
+- **Interactive Gaming** - Three-level challenge progression with difficulty scaling
+- **Real-Time Validation** - Immediate feedback on encryption/decryption attempts
+- **Leaderboard System** - SQL Server-backed global ranking and score tracking
+- **Image Encryption** - Dedicated XOR-based image file encryption/decryption
+- **Educational Focus** - Learn cryptography through practical problem-solving
+- **Modern UI** - Dark theme with neon accents, responsive design, real-time timers
 
-#### 2. **Dashboard_game.py** - Main Gaming Interface
-Interactive game dashboard with:
-- **Multi-Level Challenges** - Three progressive difficulty levels
-- **Row Transposition Cipher** - Level One cipher challenge
-- **Complex Cipher Challenges** - Levels Two and Three
-- **Leaderboard System** - Track top players and scores
-- **Real-Time Timer** - 120-second challenges with countdown
-- **Database Integration** - SQL Server connection for user data and scores
-- **Scoring System** - Automatic score calculation and updates
-- **User Authentication** - Connect to cyber_user database
+## Architecture
 
-#### 3. **Introduction_game.py** - Educational Challenges
-Initial learning module featuring:
-- **Fibonacci Encryption/Decryption** - Position-based Fibonacci shift
-- **Hieroglyph Cipher Challenges** - Egyptian symbols with Fibonacci encryption
-- **Round 5 Cipher** - Complex categorized cipher puzzle
-- **Calculus Cipher Game** - Mathematical cipher using symbolic computation
-- **Interactive GUI** - Neon-themed interface with Consolas font
-- **Progress Tracking** - Real-time game state management
+| Component | Technology | Purpose |
+|-----------|-----------|---------|
+| **GUI Framework** | CustomTkinter | Modern, responsive interface |
+| **Image Processing** | PIL (Pillow) | Image encryption/decryption |
+| **Mathematical Operations** | NumPy, SymPy | Hill Cipher, Delta Cipher, calculus-based encryption |
+| **Database** | SQL Server | User data, scores, leaderboard |
+| **Connection** | PyODBC | Database connectivity |
+| **Language** | Python 3.x | Core implementation |
 
-#### 4. **ImageEncryption.py** - Image-Based Cryptography
-File encryption utility for images:
-- **XOR Image Encryption** - Encrypt image files using XOR cipher with a custom key
-- **Image Decryption** - Decrypt previously encrypted images
-- **File Management** - Browse, select, and save encrypted/decrypted images
-- **Supported Formats** - PNG, JPG, JPEG, BMP
-- **User-Friendly GUI** - Dark-themed interface with file dialogs
+## Cipher Categories
 
-## 🔐 Cipher Types Explained
-
-### Substitution Ciphers
-Replace each plaintext character with a ciphertext character consistently.
-- Examples: Caesar, ROT13, Substitution, Playfair
-
-### Transposition Ciphers
-Rearrange plaintext characters without changing them.
-- Examples: Rail Fence, Reverse, Row Transposition
-
-### Polyalphabetic Ciphers
-Use multiple substitution rules based on position.
-- Examples: Vigenere, Fibonacci-Caesar
-
-### Mathematical Ciphers
-Use mathematical operations for encryption.
-- Examples: Hill Cipher (matrices), Delta Cipher (calculus), XOR Cipher (bitwise)
-
-### Specialized Ciphers
-Unique implementations with specific characteristics.
-- Examples: Egyptian Hieroglyph, Round 5 Cipher
-
-## 🛠️ Technologies & Dependencies
-
-### Core Libraries
-- **Python 3.x** - Programming language
-- **CustomTkinter** - Modern GUI framework
-- **Tkinter** - GUI toolkit (built-in)
-- **PIL (Pillow)** - Image processing
-- **NumPy** - Numerical operations for Hill Cipher
-- **SymPy** - Symbolic mathematics for Delta Cipher
-- **PyODBC** - SQL Server database connection
-
-### Database
-- **SQL Server (MSSQL)** - User data and leaderboard storage
-- **Database:** `cyber_user`
-- **Tables:** Users, Scores, Leaderboard
+- **Substitution** - Character replacement (Caesar, ROT13, Vigenere, Playfair)
+- **Transposition** - Character rearrangement (Rail Fence, Reverse, Row Transposition)
+- **Polyalphabetic** - Position-based substitution (Vigenere, Fibonacci-Caesar)
+- **Mathematical** - Algorithmic encryption (Hill Cipher, Delta Cipher, XOR)
+- **Specialized** - Unique implementations (Egyptian Hieroglyph, Round 5 Cipher)
 
 
-## 📊 Game Features
+## Challenge Structure
 
-### Challenge Modes
-1. **Level One** - Row Transposition with 2-minute timer
-2. **Level Two** - Advanced cipher challenges
-3. **Level Three** - Complex multi-cipher puzzles
-4. **Leaderboard** - Global ranking system
+| Level | Challenge Type | Duration | Difficulty |
+|-------|----------------|----------|-----------|
+| **Level 1** | Row Transposition | 120 sec | Beginner |
+| **Level 2** | Advanced Ciphers | 120 sec | Intermediate |
+| **Level 3** | Multi-Cipher Puzzles | 120 sec | Advanced |
+| **Leaderboard** | Global Ranking | - | All Levels |
 
-### User Interaction
-- Select cipher challenges from main menu
-- Input plaintext/ciphertext
-- Real-time validation
-- Score calculation and storage
-- Database-backed leaderboard
+## Learning Outcomes
 
-### Visual Interface
-- Dark theme with neon accents (green/cyan)
-- Responsive layouts
-- Timer display
-- Score tracking
-- Medal/achievement system
+Users gain practical knowledge in:
+- **Cryptographic Principles** - Encrypt/decrypt using classical and modern algorithms
+- **Cipher Analysis** - Understand strengths and weaknesses of different methods
+- **Mathematical Encryption** - Matrix operations, calculus, and Fibonacci sequences
+- **Software Security** - Real-world application of cryptography concepts
+- **GUI & Database Integration** - Full-stack application development
 
 ---
 
-**Made with ❤️ for Cryptography Enthusiasts**
-
-**Version:** 1.0  
-**Last Updated:** 2025
+**Version:** 1.0 | **Status:** Active Development  
+For detailed walkthrough, see [Project Demo](https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm)
