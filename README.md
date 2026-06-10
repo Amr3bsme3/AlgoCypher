@@ -6,7 +6,7 @@
 
 **AlgoCypher** is an interactive cryptography platform that implements 11+ classical and advanced cipher algorithms with engaging game-based challenges. Users can encrypt/decrypt messages, solve timed cipher puzzles, and compete on a leaderboard.
 
-**[▶️ Project Demo](https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm)** | **[Video Explanation](https://www.youtube.com/watch?v=S9fDUpTTqjk)**
+**[▶️Video Explanation](https://www.youtube.com/watch?v=S9fDUpTTqjk)**
 
 ## Cipher Implementations
 
