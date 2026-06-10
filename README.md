@@ -8,10 +8,11 @@
 
 ## 🎮 Video Explanation
 
-For a detailed walkthrough and visual explanation of the project, watch this video:
-[![AlgoCypher Project Explanation](https://img.shields.io/badge/YouTube-Watch%20Video-red)](https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm)
+For a detailed walkthrough and visual explanation of the project, click on the video thumbnail below:
 
-[Direct Link: https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm](https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm)
+[![AlgoCypher - Project Explanation and Demo](https://img.youtube.com/vi/S9fDUpTTqjk/maxresdefault.jpg)](https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm)
+
+**[▶️ Watch on YouTube](https://youtu.be/S9fDUpTTqjk?si=ArIBL7i9KBsbUlnm)** | **[🔗 Direct Link](https://www.youtube.com/watch?v=S9fDUpTTqjk)**
 
 ## 📋 Project Structure
 
